@@ -1,0 +1,95 @@
+:root {
+  --bg: #f7f5f0;
+  --ink: #1d2826;
+  --muted: #55625f;
+  --brand: #0f5c56;
+  --brand-ink: #ffffff;
+  --card: #ffffff;
+  --line: #e2ddd3;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #141a19;
+    --ink: #eef2f0;
+    --muted: #a7b3b0;
+    --brand: #4fb3a8;
+    --brand-ink: #0c1312;
+    --card: #1c2422;
+    --line: #2c3634;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+a { color: var(--brand); }
+
+.wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.logo { font-weight: 700; font-size: 20px; letter-spacing: -0.01em; color: var(--ink); text-decoration: none; }
+.contact-link { font-size: 15px; }
+
+.hero { padding-top: 48px; padding-bottom: 56px; }
+.eyebrow { color: var(--brand); font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; font-size: 13px; margin: 0 0 12px; }
+h1 { font-size: clamp(30px, 5vw, 46px); line-height: 1.15; letter-spacing: -0.02em; margin: 0 0 20px; max-width: 18ch; }
+.lead { font-size: 19px; color: var(--muted); max-width: 60ch; margin: 0 0 16px; }
+.status { font-weight: 600; margin: 0 0 28px; }
+
+.button {
+  display: inline-block;
+  background: var(--brand);
+  color: var(--brand-ink);
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.points {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  padding-bottom: 48px;
+}
+
+.points article, .note {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.note { margin-bottom: 56px; }
+h2 { font-size: 19px; margin: 0 0 8px; }
+.points p, .note p { margin: 0; color: var(--muted); }
+
+.prose { max-width: 720px; padding-top: 24px; padding-bottom: 56px; }
+.prose h1 { font-size: 32px; max-width: none; }
+.prose h2 { margin-top: 28px; }
+
+.foot {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+  padding-bottom: 40px;
+  color: var(--muted);
+  font-size: 15px;
+}
