@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sub-processors – Guestwind</title>
+  <meta name="description" content="The vendors Guestwind uses to process personal data for a hotel, and where each of them works.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%230f5c56'/%3E%3Cpath d='M9 18c4-6 10-6 14 0' stroke='%23fff' stroke-width='2.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="wrap top">
+    <a class="logo" href="./">Guestwind</a>
+    <a class="contact-link" href="mailto:support@guestwind.com">support@guestwind.com</a>
+  </header>
+
+  <main class="wrap prose">
+    <h1>Sub-processors</h1>
+    <p class="updated">Last updated: 20 November 2026</p>
+    <p>Guestwind is in pre-launch. This page lists the vendors the service is set up to use to process personal data
+      for a hotel, and where each of them works. Each hotel's data processing agreement lists the vendors that are
+      active for that hotel.</p>
+
+    <h2 id="vendors">Vendors we use to run the service</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th scope="col">Vendor</th><th scope="col">What it does</th><th scope="col">Where the data is processed</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Supabase</th>
+            <td>The database that holds the service's data, sign-in for Control Tower users, and the encrypted store
+              for a hotel's access tokens.</td>
+            <td>EU, Frankfurt. Account, billing and support data can leave the region.</td></tr>
+          <tr><th scope="row">Hetzner Online</th>
+            <td>The servers and file storage that run the service.</td>
+            <td>EU, Germany or Finland.</td></tr>
+          <tr><th scope="row">Google Cloud (Vertex AI)</th>
+            <td>The AI language models that read guest messages and draft replies, at present Google's Gemini
+              models.</td>
+            <td>Google Cloud's EU multi-region.</td></tr>
+          <tr><th scope="row">Amazon Web Services (Simple Email Service)</th>
+            <td>Sends the hotel's emails to its guests.</td>
+            <td>EU, Frankfurt (eu-central-1).</td></tr>
+          <tr><th scope="row">Resend</th>
+            <td>Sign-in emails and system emails to hotel staff. Never guest email.</td>
+            <td>Sent through its region in Ireland. Email logs and account data are stored in the United States.</td></tr>
+          <tr><th scope="row">Slack</th>
+            <td>Approval requests and alerts for the hotel's team. These carry no guest content.</td>
+            <td>United States.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Where a vendor processes personal data outside the EU, the transfer rests on Standard Contractual Clauses or on
+      that vendor's own certification under the EU-US Data Privacy Framework.</p>
+
+    <h2 id="hotel">The hotel's own accounts and systems</h2>
+    <p>The hotel holds these accounts and the contracts for them. Guestwind connects to them when the hotel
+      authorises it, and only for the features the hotel switched on.</p>
+    <ul>
+      <li>Meta: the hotel's Facebook Page, Instagram account, WhatsApp Business number, ad account and catalogue.</li>
+      <li>Google: the hotel's Google Ads account, Business Profile and YouTube channel.</li>
+      <li>TikTok: the hotel's ad account and catalogue.</li>
+      <li>The hotel's property management system, booking engine and channel manager.</li>
+    </ul>
+
+    <h2 id="optional">Optional features</h2>
+    <p>Some optional features use further vendors, for example a phone assistant or AI-made video. Such a vendor is
+      added to this page, and the hotel is told and can object, before it is used for that hotel.</p>
+
+    <h2 id="operator">Operator and contact</h2>
+    <p>Guestwind is operated by Easybuy Technologies LLC, a limited liability company registered in Arizona, USA (Arizona Corporation Commission business ID 25146151), 4539 N 22nd St, Ste N, Phoenix, AZ 85016, USA. Email: <a href="mailto:support@guestwind.com">support@guestwind.com</a>. Phone: <a href="tel:+16027914525">+1 602 791 4525</a>.</p>
+  </main>
+
+  <footer class="wrap foot">
+    <span>© 2026 Easybuy Technologies LLC</span>
+    <a href="mailto:support@guestwind.com">support@guestwind.com</a>
+    <a href="./">Home</a>
+    <a href="terms.html">Terms</a>
+    <a href="privacy-policy.html">Privacy policy</a>
+    <a href="imprint.html">Imprint</a>
+    <a href="subprocessors.html">Sub-processors</a>
+  </footer>
+</body>
+</html>

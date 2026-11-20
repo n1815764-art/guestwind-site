@@ -93,3 +93,24 @@ h2 { font-size: 19px; margin: 0 0 8px; }
   color: var(--muted);
   font-size: 15px;
 }
+
+.updated { color: var(--muted); }
+.prose h3 { font-size: 17px; margin: 20px 0 6px; }
+.prose ul { padding-left: 22px; }
+.prose li { margin-bottom: 6px; }
+.table-wrap { overflow-x: auto; }
+.prose table { width: 100%; border-collapse: collapse; margin: 16px 0 8px; font-size: 15px; }
+.prose th, .prose td { text-align: left; vertical-align: top; padding: 10px 14px 10px 0; border-bottom: 1px solid var(--line); }
+.prose thead th { font-weight: 600; color: var(--muted); }
+.prose tbody th { font-weight: 600; min-width: 150px; }
+.prose dl { display: grid; grid-template-columns: minmax(140px, 220px) 1fr; gap: 8px 16px; margin: 16px 0; }
+.prose dt { color: var(--muted); }
+.prose dd { margin: 0; }
+.foot a { white-space: nowrap; }
+@media (max-width: 560px) {
+  .prose dl { grid-template-columns: 1fr; gap: 2px; }
+  .prose dt { margin-top: 10px; }
+  .prose thead { display: none; }
+  .prose tr { display: block; padding: 12px 0; border-bottom: 1px solid var(--line); }
+  .prose th, .prose td { display: block; padding: 2px 0; border: 0; }
+}
